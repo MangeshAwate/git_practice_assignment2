@@ -1,11 +1,23 @@
-num=3;
+let num=3;
 
-count=0;
-for(i=1;i<num/2;i++){
-	if(num%i==0){
-		count++;
+function c_prime(integer){
+
+	let count=0;
+	for(let i=1;i<=num;i++){
+		if(num%i==0){
+			count++;
+		}
 	}
+	if(count==2){
+		return true;
+	}
+	return false;
 }
-if(count==2){
-	console.log("prime is " + num)
+
+let res=c_prime(num);
+if(res==true){
+	console.log("prime");
+}
+else{
+	console.log("Not prime");
 }
