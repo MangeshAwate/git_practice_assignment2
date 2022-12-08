@@ -1,9 +1,9 @@
-num=3;
+let num=3;
 
 function c_prime(integer){
 
 	let count=0;
-	for(i=1;i<=num;i++){
+	for(let i=1;i<=num;i++){
 		if(num%i==0){
 			count++;
 		}
